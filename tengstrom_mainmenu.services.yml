@@ -1,0 +1,10 @@
+services:
+  # Hook handlers
+  tengstrom_mainmenu.hook_handlers.block_access:
+    class: Drupal\tengstrom_mainmenu\HookHandlers\BlockAccessHandler
+
+  tengstrom_mainmenu.hook_handlers.preprocess_block:
+    class: Drupal\tengstrom_mainmenu\HookHandlers\PreprocessBlockHandler
+
+  tengstrom_mainmenu.hook_handlers.toolbar_alter:
+    class: Drupal\tengstrom_mainmenu\HookHandlers\ToolbarAlterHandler

@@ -1,0 +1,10 @@
+{
+    "name": "drupal/tengstrom_mainmenu",
+    "type": "drupal-module--tengstrom",
+    "require": {
+        "drupal/core": "^9.4 || ^10",
+        "drupal/responsive_menu": "^4.4",
+        "drupal/tengstrom_general": "dev-master"
+    }
+}
+

@@ -1,0 +1,35 @@
+<?php
+
+use Drupal\block\Entity\Block;
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Session\AccountInterface;
+
+/**
+ * Implements hook_toolbar_alter().
+ */
+function tengstrom_mainmenu_toolbar_alter(array &$items): void {
+  /** @var \Drupal\tengstrom_mainmenu\HookHandlers\ToolbarAlterHandler $service */
+  $service = \Drupal::service('tengstrom_mainmenu.hook_handlers.toolbar_alter');
+
+  $service->alter($items);
+}
+
+/**
+ * Implements hook_block_access().
+ */
+function tengstrom_mainmenu_block_access(Block $block, string $operation, AccountInterface $account): AccessResult {
+  /** @var \Drupal\tengstrom_mainmenu\HookHandlers\BlockAccessHandler $service */
+  $service = \Drupal::service('tengstrom_mainmenu.hook_handlers.block_access');
+
+  return $service->getAccess($block, $operation, $account);
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function tengstrom_mainmenu_preprocess_block(array &$vars): void {
+  /** @var \Drupal\tengstrom_mainmenu\HookHandlers\PreprocessHandlers\PreprocessBlockHandler $service */
+  $service = \Drupal::service('tengstrom_mainmenu.hook_handlers.preprocess_block');
+
+  $service->preprocess($vars);
+}

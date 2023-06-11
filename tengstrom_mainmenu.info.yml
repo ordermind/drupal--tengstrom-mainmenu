@@ -1,0 +1,12 @@
+name: Tengström Main Menu
+type: module
+package: Tengström Profile
+description: 'Provides the main menu for the Tengström profile'
+core_version_requirement: ^9 || ^10
+
+dependencies:
+  - block
+  - responsive_menu
+  - tengstrom_general
+
+version: 0.1.0
