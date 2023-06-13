@@ -5,8 +5,8 @@ description: 'Provides the main menu for the Tengström profile'
 core_version_requirement: ^9 || ^10
 
 dependencies:
-  - block
-  - responsive_menu
-  - tengstrom_general
+  - drupal:block
+  - responsive_menu:responsive_menu
+  - tengstrom_general:tengstrom_general
 
 version: 0.1.0
