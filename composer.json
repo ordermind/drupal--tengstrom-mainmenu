@@ -1,10 +1,17 @@
 {
     "name": "drupal/tengstrom_mainmenu",
     "type": "drupal-module--tengstrom",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:ordermind/drupal--tengstrom-shared.git",
+            "no-api": true
+        }
+    ],
     "require": {
         "drupal/core": "^9.4 || ^10",
         "drupal/responsive_menu": "^4.4",
-        "drupal/tengstrom_general": "dev-master"
+        "ordermind/drupal--tengstrom-shared": "dev-master"
     }
 }
 
