@@ -8,4 +8,4 @@ tengstrom_mainmenu.taxonomy_list:
   title: 'Taxonomies'
   parent: tengstrom_mainmenu.config
   route_name: view.taxonomy.page_1
-  weight: 0
+  weight: 10
