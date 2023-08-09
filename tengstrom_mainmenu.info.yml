@@ -6,6 +6,7 @@ core_version_requirement: ^9 || ^10
 
 dependencies:
   - drupal:block
+  - drupal:taxonomy
   - responsive_menu:responsive_menu
 
 version: 0.1.0
