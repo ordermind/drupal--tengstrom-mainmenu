@@ -2,7 +2,7 @@ tengstrom_mainmenu.config:
   title: 'Configuration'
   menu_name: main
   route_name: <nolink>
-  weight: 100
+  weight: 50
 
 tengstrom_mainmenu.taxonomy_list:
   title: 'Taxonomies'
