@@ -8,3 +8,6 @@ services:
 
   tengstrom_mainmenu.hook_handlers.toolbar_alter:
     class: Drupal\tengstrom_mainmenu\HookHandlers\ToolbarAlterHandler
+
+  tengstrom_mainmenu.hook_handlers.library_info_alter:
+    class: Drupal\tengstrom_mainmenu\HookHandlers\LibraryInfoAlterHandler

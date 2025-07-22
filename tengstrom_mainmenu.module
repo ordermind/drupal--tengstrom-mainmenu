@@ -35,3 +35,13 @@ function tengstrom_mainmenu_preprocess_block(array &$variables): void {
 
   $service->preprocess($variables);
 }
+
+/**
+ * Implements hook_library_info_alter().
+ */
+function tengstrom_mainmenu_library_info_alter(array &$libraries, string $extension) {
+  /** @var \Drupal\tengstrom_mainmenu\HookHandlers\LibraryInfoAlterHandler $service */
+  $service = \Drupal::service('tengstrom_mainmenu.hook_handlers.library_info_alter');
+
+  $service->alter($libraries, $extension);
+}
